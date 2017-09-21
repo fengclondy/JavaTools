@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="wechant_Scheduled:jar">
+    <output-path>$PROJECT_DIR$/out/</output-path>
+    <root id="archive" name="wechant_Scheduled.jar">
+      <element id="module-output" name="wechant_Scheduled" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javacsv-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jsch-0.1.54.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-compress-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.43.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

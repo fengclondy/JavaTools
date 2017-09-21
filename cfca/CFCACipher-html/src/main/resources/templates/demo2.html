@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<HTML xmlns:th="http://www.thymeleaf.org">
+<HEAD>
+    <meta charset="utf-8"/>
+    <title>HTML5 SIP DEMO </title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
+    <style>
+        body, html {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <SCRIPT th:inline="javascript">
+        /*<![CDATA[*/
+        function log(msg) {
+            var p = document.getElementById("log");
+            var tmp = "";
+            for (var i = 0; i < msg.length; i += 30) {
+                tmp += msg.substr(i, 30) + "\n";
+            }
+            p.innerHTML = tmp + p.innerHTML;
+        }
+        function clearLog() {
+            var p = document.getElementById("log");
+            p.innerHTML = "";
+        }
+        /*]]>*/
+    </SCRIPT>
+    <link rel="stylesheet" href="../static/css/Keyboard/keyboard.css" th:href="@{/css/Keyboard/keyboard.css}"/>
+    <script type="text/javascript" src="../static/js/cfcasip.min.js" th:src="@{/js/cfcasip.min.js}"
+            charset="UTF-8"></script>
+    <script type="text/javascript" src="../static/js/utils.js" th:src="@{/js/utils.js}"
+            charset="UTF-8"></script>
+    <SCRIPT th:inline="javascript">
+        /*<![CDATA[*/
+
+        window.onload = initInput;
+
+        function getfun() {
+            alert("控件1结果")
+            var str = getEncrypt("SIPBox1", 0);
+            console.log(str);
+            alert("控件3结果")
+            var str1 = getEncrypt("SIPBox3", 0);
+            console.log(str1)
+        }
+
+        /*]]>*/
+    </SCRIPT>
+</HEAD>
+
+<body id="mobile" style="margin:0; padding:0;">
+<main>
+    <div id="pagewrap" data-role="page" data-theme="b">
+
+        <h3>公共接口</h3>
+        <div id="wrap">
+            <table border="0" cellpadding="2" cellspacing="0">
+                <tr>
+                    <td colspan="1" height="30">
+                        <button type="button" data-mini="true" id="getVersion" onClick='getVersion()'>获取版本号</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" height="30">ServerRandom:</td>
+                    <td colspan="1" height="30">
+                        <input id="serverRandom" name="serverRandom" value="MTIzNDU2Nzg5MDk4NzY1NA=="/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h3>安全控件</h3>
+        <div id="SIPBox">
+            <table border="0" cellpadding="2" cellspacing="0">
+                <tr>
+                    <td colspan="2" height="30">安全控件1</td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="30">
+                        <input class="sip" type="text" id="SIPBox1" name="SIPBox1" value="" readonly="true"
+                               onclick="setProperty('SIPBox1',0,2,'^[0-9]*$ ') "/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" height="30">
+                        <button data-mini="true" id="clearSIPBox1" name="SIPBox1" onClick='clearInput("SIPBox1")'>清空
+                        </button>
+                    </td>
+                    <td colspan="1" height="30">
+                        <button data-mini="true" id="checkSIPBox1" name="SIPBox1" onClick='checkRegex("SIPBox1")'>正则匹配
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" height="30">安全控件3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="30">
+                        <input class="sip" type="text" id="SIPBox3" name="SIPBox3" value="" readonly="true"
+                               onclick="setProperty('SIPBox3',1, 1)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" height="30">
+                        <button data-mini="true" id="clearSIPBox3" name="SIPBox3" onClick='clearInput("SIPBox3")'>清空
+                        </button>
+                    </td>
+                    <td colspan="1" height="30">
+                        <button data-mini="true" id="checkSIPBox3" name="SIPBox3" onClick='checkRegex("SIPBox3")'>正则匹配
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" height="30">
+                        <button data-mini="true" id="getSIPBox1Value" name="SIPBox1" onClick='getEncrypt("SIPBox1", 0)'>
+                            获取控件1结果
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" height="30">
+                        <button data-mini="true" id="getSIPBox3Value" name="SIPBox3" onClick='getEncrypt("SIPBox3", 1)'>
+                            获取控件3结果
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="30">
+                        <button data-mini="true" id="checkInputValueMatch" name="SIPBox1AndSIPBox2"
+                                onClick='checkEqual("SIPBox1", "SIPBox3")'>检测控件1控件3内容是否一致
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">加密结果:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="encryptedResult" name="encryptedResult" cols="30" rows="20"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        log:
+                        <pre id="log" style="border: 1px solid #ccc;height:100px;overflow: scroll;"></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button data-mini="true" id="clearLog" name="clearLog" onClick='clearLog()'>清空日志</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button data-mini="true" id="clearLo1" name="clearLog" onClick='getfun()'>获取结果</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</main>
+</body>
+</HTML>
