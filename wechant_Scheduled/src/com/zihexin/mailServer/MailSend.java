@@ -10,9 +10,10 @@ import com.zihexin.utils.mail.MailUtil;
  */
 public class MailSend {
 
-    private static final String MAIL_HOST = "10.6.4.78";
+    private static final String MAIL_HOST = "mail.zihexin.com"; // 内网IP :10.6.4.78
     private static final String MAIL_SENDER = "zhangjinmiao@zihexin.com";
-    private static final String[] MAIL_RECEIVE = {"tianhuipeng@zihexin.com", "zhangjinmiao@zihexin.com", "linyong@zihexin.com"};
+//    private static final String[] MAIL_RECEIVE = {"tianhuipeng@zihexin.com", "zhangjinmiao@zihexin.com", "linyong@zihexin.com"};
+    private static final String[] MAIL_RECEIVE = { "zhangjinmiao@zihexin.com", "itzjm@qq.com"};
     private static final String MAIL_USERNAME = "zhangjinmiao@zihexin.com";
     private static final String MAIL_PASSWORD = "ZHXabc123";
     private static final String MAIL_SUBJECT = "APP Store公众号对账单";
@@ -34,7 +35,4 @@ public class MailSend {
     }
 
 
-//    public static void main(String[] args) {
-//        sender();
-//    }
 }

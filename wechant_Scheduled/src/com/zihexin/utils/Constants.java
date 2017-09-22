@@ -27,14 +27,14 @@ public class Constants {
     public static final String SUFFIX_CSV = ".csv"; // csv文件后缀
 
     //mysql - dev
-//    public static final String MYSQL_URL = "jdbc:mysql://10.6.4.154:3306/zhx_gateway?useUnicode=true&characterEncoding=utf-8";
-//    public static final String MYSQL_USERNAME = "zhx_online";
-//    public static final String MYSQL_PASSWORD = "123456";
-//    public static final String MYSQL_DRIVER = "com.mysql.jdbc.Driver";
-    //mysql - prod
-    public static final String MYSQL_URL = "jdbc:mysql://10.10.126.61:3306/zhx_gateway?useUnicode=true&characterEncoding=utf-8";
+    public static final String MYSQL_URL = "jdbc:mysql://10.6.4.154:3306/zhx_gateway?useUnicode=true&characterEncoding=utf-8";
     public static final String MYSQL_USERNAME = "zhx_online";
-    public static final String MYSQL_PASSWORD = "10Liugehetao#22";
+    public static final String MYSQL_PASSWORD = "123456";
     public static final String MYSQL_DRIVER = "com.mysql.jdbc.Driver";
+    //mysql - prod
+//    public static final String MYSQL_URL = "jdbc:mysql://10.10.126.61:3306/zhx_gateway?useUnicode=true&characterEncoding=utf-8";
+//    public static final String MYSQL_USERNAME = "zhx_online";
+//    public static final String MYSQL_PASSWORD = "10Liugehetao#22";
+//    public static final String MYSQL_DRIVER = "com.mysql.jdbc.Driver";
 
 }

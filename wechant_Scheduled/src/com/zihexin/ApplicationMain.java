@@ -82,16 +82,17 @@ public class ApplicationMain {
         String destFolder = Constants.SFTP_PATH + "/" + formatPreDate + "/";
         try {
             SFTPClientUtil.sshSftp(Constants.SFTP_IP, Constants.SFTP_USERNAME, Constants.SFTP_PASSWORD, Constants.SFTP_PORT, fileAbsolutePath, destFolder);
+            System.out.println("文件上传成功！目录：" + destFolder);
 
             // 发送邮件通知
+            System.out.println("开始发送邮件===============");
             MailSend mailSend = new MailSend();
             mailSend.sender(formatPreDate, payList.size(), refundList.size());
-
+            System.out.println("==============");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("文件上传失败");
         }
-        System.out.println("文件上传成功！目录：" + destFolder);
 
     }
 }

@@ -9,6 +9,7 @@ public class MailUtil {
 
 
     public static boolean send(Mail mail) {
+
         // 发送email
         HtmlEmail email = new HtmlEmail();
         try {
