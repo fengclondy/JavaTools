@@ -1,0 +1,3 @@
+com\jimzhang\util\Mail.class
+com\jimzhang\util\MailUtil.class
+com\jimzhang\server\MailServer.class

@@ -1,0 +1,168 @@
+2017-09-15 13:56:31.804 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 13212 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 13:56:31.805 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 13:56:31.854 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5fbe3212: startup date [Fri Sep 15 13:56:31 CST 2017]; root of context hierarchy
+2017-09-15 13:56:33.745 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 13:56:33.868 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+2017-09-15 13:56:33.873 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'handleErrorExecutor'
+2017-09-15 13:56:33.881 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2017-09-15 13:56:34.075 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2017-09-15 13:56:34.103 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-15 13:56:34.104 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-15 13:56:34.107 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-15 13:56:34.132 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Started AccountFileScheduledApplication in 2.701 seconds (JVM running for 3.129)
+2017-09-15 13:56:34.132 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 13:56:34.349 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共0条
+2017-09-15 13:56:34.386 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共0条
+2017-09-15 13:56:34.387 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 13:56:34.387 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 13:56:34.387 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 13:56:34.387 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 13:56:34.394 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 13:56:34.394 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 13:56:34.406 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 14:59:07.120 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 13560 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 14:59:07.121 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 14:59:07.173 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@224bde1c: startup date [Fri Sep 15 14:59:07 CST 2017]; root of context hierarchy
+2017-09-15 14:59:08.932 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 14:59:09.108 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-09-15 14:59:52.842 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 14068 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 14:59:52.843 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 14:59:52.908 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@224bde1c: startup date [Fri Sep 15 14:59:52 CST 2017]; root of context hierarchy
+2017-09-15 14:59:54.750 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 14:59:54.924 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+2017-09-15 14:59:54.933 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'handleErrorExecutor'
+2017-09-15 14:59:54.940 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2017-09-15 14:59:55.138 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2017-09-15 14:59:55.171 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-15 14:59:55.172 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-15 14:59:55.177 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-15 14:59:55.202 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 14:59:55.207 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Started AccountFileScheduledApplication in 2.717 seconds (JVM running for 3.159)
+2017-09-15 14:59:55.405 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共0条
+2017-09-15 14:59:55.442 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共0条
+2017-09-15 14:59:55.442 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 14:59:55.442 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 14:59:55.443 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 14:59:55.443 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 14:59:55.450 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 14:59:55.450 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 14:59:55.463 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 15:00:16.474 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 15:00:16.532 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共0条
+2017-09-15 15:00:16.569 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共0条
+2017-09-15 15:00:16.569 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 15:00:16.569 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 15:00:16.569 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 15:00:16.569 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 15:00:16.573 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件已存在，删除目录：E:\workspace-test\AccountFile_Scheduled\temp\20170914\下所有文件成功！
+2017-09-15 15:00:16.578 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 15:00:16.578 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 15:00:16.578 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 15:03:48.356 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 14156 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 15:03:48.357 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 15:03:48.411 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5864773b: startup date [Fri Sep 15 15:03:48 CST 2017]; root of context hierarchy
+2017-09-15 15:03:50.360 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 15:03:50.507 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+2017-09-15 15:03:50.514 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'handleErrorExecutor'
+2017-09-15 15:03:50.520 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2017-09-15 15:03:50.887 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2017-09-15 15:03:50.917 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-15 15:03:50.918 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-15 15:03:50.920 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-15 15:03:50.954 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 15:03:50.954 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Started AccountFileScheduledApplication in 2.99 seconds (JVM running for 3.433)
+2017-09-15 15:03:51.157 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共4条
+2017-09-15 15:03:51.203 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共1条
+2017-09-15 15:03:51.204 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 15:03:51.204 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 15:03:51.204 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 15:03:51.204 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 15:03:51.207 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件已存在，删除目录：E:\workspace-test\AccountFile_Scheduled\temp\20170914\下所有文件成功！
+2017-09-15 15:03:51.258 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 15:03:51.258 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 15:03:51.274 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 15:04:12.285 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 15:04:12.348 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共4条
+2017-09-15 15:04:12.384 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共1条
+2017-09-15 15:04:12.384 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 15:04:12.384 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 15:04:12.384 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 15:04:12.384 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 15:04:12.388 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件已存在，删除目录：E:\workspace-test\AccountFile_Scheduled\temp\20170914\下所有文件成功！
+2017-09-15 15:04:12.421 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 15:04:12.421 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 15:04:12.421 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 15:06:47.681 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 1700 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 15:06:47.682 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 15:06:47.744 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@224bde1c: startup date [Fri Sep 15 15:06:47 CST 2017]; root of context hierarchy
+2017-09-15 15:06:49.606 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 15:06:49.733 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+2017-09-15 15:06:49.738 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'handleErrorExecutor'
+2017-09-15 15:06:49.744 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2017-09-15 15:06:49.941 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2017-09-15 15:06:49.984 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-15 15:06:49.985 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-15 15:06:49.989 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-15 15:06:50.033 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Started AccountFileScheduledApplication in 2.734 seconds (JVM running for 3.178)
+2017-09-15 15:06:50.059 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 15:06:50.267 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共4条
+2017-09-15 15:06:50.304 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共1条
+2017-09-15 15:06:50.305 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 15:06:50.305 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 15:06:50.305 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 15:06:50.305 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 15:06:50.309 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件已存在，删除目录：E:\workspace-test\AccountFile_Scheduled\temp\20170914\下所有文件成功！
+2017-09-15 15:06:50.348 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 15:06:50.348 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 15:06:50.361 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 15:07:11.366 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 15:07:11.403 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共4条
+2017-09-15 15:07:11.440 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共1条
+2017-09-15 15:07:11.440 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 15:07:11.440 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 15:07:11.440 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 15:07:11.440 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 15:07:11.444 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件已存在，删除目录：E:\workspace-test\AccountFile_Scheduled\temp\20170914\下所有文件成功！
+2017-09-15 15:07:11.469 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 15:07:11.469 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 15:07:11.469 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 15:16:39.700 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 14252 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 15:16:39.700 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 15:16:39.756 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@224bde1c: startup date [Fri Sep 15 15:16:39 CST 2017]; root of context hierarchy
+2017-09-15 15:16:41.529 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 15:16:41.678 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+2017-09-15 15:16:41.685 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'handleErrorExecutor'
+2017-09-15 15:16:41.694 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2017-09-15 15:16:41.955 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2017-09-15 15:16:41.994 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-15 15:16:41.996 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-15 15:16:41.998 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-15 15:16:42.021 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 定时任务开始，读取数据库获取数据-----
+2017-09-15 15:16:42.025 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Started AccountFileScheduledApplication in 2.716 seconds (JVM running for 3.166)
+2017-09-15 15:16:42.273 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取支付数据成功，共4条
+2017-09-15 15:16:42.312 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 读取退款数据成功，共1条
+2017-09-15 15:16:42.313 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 项目绝对路径:E:\workspace-test\AccountFile_Scheduled
+2017-09-15 15:16:42.314 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件夹绝对路径:/zhxs/data\20170914\
+2017-09-15 15:16:42.314 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件绝对路径:E:\workspace-test\AccountFile_Scheduled\temp\20170914\
+2017-09-15 15:16:42.314 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件名:20170914.txt
+2017-09-15 15:16:42.319 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 文件已存在，删除目录：E:\workspace-test\AccountFile_Scheduled\temp\20170914\下所有文件成功！
+2017-09-15 15:16:42.361 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 写入数据到文件成功!
+2017-09-15 15:16:42.361 logback [Scheduler_Task-1] INFO  com.zhx.task.UploadAccountFileTask - 开始上传文件20170914.txt到sftp服务器中的/zhxs/data\20170914\文件夹下
+2017-09-15 15:16:42.373 logback [Scheduler_Task-1] INFO  com.zhx.utils.SFTPUtils - Session created.
+2017-09-15 16:35:16.929 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 13736 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 16:35:16.930 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 16:35:16.972 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f3b375c: startup date [Fri Sep 15 16:35:16 CST 2017]; root of context hierarchy
+2017-09-15 16:35:18.744 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 16:35:18.868 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-09-15 16:35:55.215 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Starting AccountFileScheduledApplication on admin-PC with PID 12936 (E:\workspace-test\AccountFile_Scheduled\target\classes started by admin in E:\workspace-test\AccountFile_Scheduled)
+2017-09-15 16:35:55.216 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - The following profiles are active: dev
+2017-09-15 16:35:55.261 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5864773b: startup date [Fri Sep 15 16:35:55 CST 2017]; root of context hierarchy
+2017-09-15 16:35:57.885 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-09-15 16:35:58.014 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+2017-09-15 16:35:58.020 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'handleErrorExecutor'
+2017-09-15 16:35:58.027 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+2017-09-15 16:35:58.219 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2017-09-15 16:35:58.254 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-15 16:35:58.255 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-15 16:35:58.261 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-15 16:35:58.285 logback [restartedMain] INFO  c.z.AccountFileScheduledApplication - Started AccountFileScheduledApplication in 3.433 seconds (JVM running for 3.832)

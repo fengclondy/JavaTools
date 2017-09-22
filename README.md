@@ -10,7 +10,7 @@
 
 
 
-## wechant_Scheduled
+## task
 
-微信公众号定时上传对账单到sftp
+定时任务
 

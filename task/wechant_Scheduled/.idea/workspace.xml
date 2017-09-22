@@ -188,7 +188,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaMail/Java_SendMail" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -705,12 +705,12 @@
       <workItem from="1505983037641" duration="3768000" />
       <workItem from="1506041186594" duration="4246000" />
       <workItem from="1506045835712" duration="613000" />
-      <workItem from="1506047941177" duration="387000" />
+      <workItem from="1506047941177" duration="574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31548000" />
+    <option name="totallyTimeSpent" value="31735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

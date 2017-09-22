@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!--<include resource="org/springframework/boot/logging/logback/base.xml"/>-->
+    <!-- 使用spring-boot中提供的配置 -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <contextName>logback</contextName>
+
+    <!-- 定义参数 -->
+    <property name="log.lever" value="debug"/>
+    <property name="log.maxHistory" value="60"/>
+    <property name="log.size" value="50MB"/>
+    <!-- 生产:和项目同一路径 -->
+    <property name="log.filePath" value="accountFile_logs"/>
+    <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n"/>
+
+
+    <!--输出到控制台-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!--输出到文件-->
+    <!-- debug -->
+    <appender name="debug_file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+        <!-- 文件路径 -->
+        <File>${log.filePath}/debug/debug.log</File>
+        <!-- 按天和大小截断 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件名称 -->
+            <fileNamePattern>${log.filePath}/debug/debug-%d{yyyyMMdd}.log.%i.zip</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 文件最大size -->
+                <maxFileSize>${log.size}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!--表示只保留最近log.maxHistory天的日志-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${log.pattern}</Pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- info -->
+    <appender name="info_file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>info</level>
+        </filter>
+        <!-- 文件路径 -->
+        <File>${log.filePath}/info/info.log</File>
+        <!-- 按天和大小截断 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件名称 -->
+            <fileNamePattern>${log.filePath}/info/info-%d{yyyyMMdd}.log.%i.zip</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 文件最大size -->
+                <maxFileSize>${log.size}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!--表示只保留最近log.maxHistory天的日志-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${log.pattern}</Pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- warn -->
+    <appender name="warn_file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <!-- 文件路径 -->
+        <File>${log.filePath}/warn/warn.log</File>
+        <!-- 按天和大小截断 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件名称 -->
+            <fileNamePattern>${log.filePath}/warn/warn-%d{yyyyMMdd}.log.%i.zip</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 文件最大size -->
+                <maxFileSize>${log.size}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!--表示只保留最近log.maxHistory天的日志-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${log.pattern}</Pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- error -->
+    <appender name="error_file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <!-- 文件路径 -->
+        <File>${log.filePath}/error/error.log</File>
+        <!-- 按天和大小截断 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件名称 -->
+            <fileNamePattern>${log.filePath}/error/error-%d{yyyyMMdd}.log.%i.zip</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 文件最大size -->
+                <maxFileSize>${log.size}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!--表示只保留最近log.maxHistory天的日志-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>${log.pattern}</Pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- 异步写入文件 -->
+    <appender name="ASYNC_LOG_DEBUG" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>512</queueSize>
+        <appender-ref ref="debug_file"/>
+    </appender>
+    <appender name="ASYNC_LOG_INFO" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>512</queueSize>
+        <appender-ref ref="info_file"/>
+    </appender>
+    <appender name="ASYNC_LOG_WARN" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>512</queueSize>
+        <appender-ref ref="warn_file"/>
+    </appender>
+    <appender name="ASYNC_LOG_ERROR" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>512</queueSize>
+        <appender-ref ref="error_file"/>
+    </appender>
+
+    <!-- logback为java中的包 -->
+    <!--<logger name="com.zhx.controller"/>
+    &lt;!&ndash;logback.LogbackDemo：类的全路径
+    additivity是否向上级loger传递打印信息。默认是true&ndash;&gt;
+    <logger name="com.zhx.controller.RequestCmbcInterface" level="INFO" additivity="true">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    <logger name="com.zhx.controller.CmbcNotifyController" level="INFO" additivity="true">
+        <appender-ref ref="CONSOLE"/>
+    </logger>-->
+
+        <!-- 测试环境+开发环境. 多个使用逗号隔开. -->
+    <springProfile name="test,dev">
+        <logger name="com.zhx.controller" level="DEBUG"/>
+        <!-- 设置日志级别 -->
+    	<!--level 默认是DEBUG-->
+    	<root level="debug">
+	        <appender-ref ref="console"/>
+	        <!--<appender-ref ref="debug_file"/>
+	        <appender-ref ref="info_file"/>
+	        <appender-ref ref="warn_file"/>
+	        <appender-ref ref="error_file"/>-->
+
+            <appender-ref ref="ASYNC_LOG_DEBUG"/>
+            <appender-ref ref="ASYNC_LOG_INFO"/>
+            <appender-ref ref="ASYNC_LOG_WARN"/>
+            <appender-ref ref="ASYNC_LOG_ERROR"/>
+    	</root>
+    </springProfile>
+    <!-- 生产环境. -->
+    <springProfile name="prod,prod38">
+        <logger name="com.zhx.controller" level="INFO"/>
+        <!-- 设置日志级别 -->
+    	<!--level 默认是DEBUG-->
+    	<root level="info">
+	        <appender-ref ref="console"/>
+	        <!--<appender-ref ref="debug_file"/>
+	        <appender-ref ref="info_file"/>
+	        <appender-ref ref="warn_file"/>
+	        <appender-ref ref="error_file"/>-->
+
+            <appender-ref ref="ASYNC_LOG_DEBUG"/>
+            <appender-ref ref="ASYNC_LOG_INFO"/>
+            <appender-ref ref="ASYNC_LOG_WARN"/>
+            <appender-ref ref="ASYNC_LOG_ERROR"/>
+    	</root>
+    </springProfile>
+</configuration>
