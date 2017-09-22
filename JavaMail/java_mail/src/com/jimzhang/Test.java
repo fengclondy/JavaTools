@@ -24,7 +24,7 @@ public class Test {
             // 发送一人
 //            ms.sendMessage();
             // 发送多人
-            ms.setTo("zhangjinmiao@zihexin.com,VIP<itzjm@qq.com>");
+            ms.setTo("zhangjinmiao@zihexin.com,VIP<itzjm@qq.com>"); // 以英文','分隔，带用户名：用户名<邮箱>
             ms.sendMessageMulit();
 
         } catch (AddressException e) {

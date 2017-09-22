@@ -110,7 +110,7 @@ public class MailSender {
     }
 
     /**
-	 * 用以建 session
+	 * 参数设置： 发送给一人
 	 * message 中的各参数的设置
 	 *
 	 * @throws AddressException
@@ -128,11 +128,15 @@ public class MailSender {
         msg.setSubject(subject);
         msg.setContent(content, "text/html;charset=utf-8");
 
-        // 发送邮件
     }
 
 
-    protected void mailPropSetMulit() throws MessagingException, UnsupportedEncodingException {
+	/**
+	 * 参数设置：发送给多人
+	 * @throws MessagingException
+	 * @throws UnsupportedEncodingException
+	 */
+	protected void mailPropSetMulit() throws MessagingException, UnsupportedEncodingException {
         Session session = createSession();
 		// 创建邮件信息的对像
         msg = new MimeMessage(session);
@@ -149,6 +153,13 @@ public class MailSender {
 	}
 
 
+	/**
+	 * String的收件人转Address
+	 * @param address
+	 * @return
+	 * @throws AddressException
+	 * @throws UnsupportedEncodingException
+	 */
 	private InternetAddress parseInternetAddress(String address) throws AddressException, UnsupportedEncodingException {
     	InternetAddress actual = null;
 		if ((address.contains("<")) && (address.contains(">"))) {

@@ -28,6 +28,6 @@
  
  
 ### 收件人为多人
- - 设置setAddresses(adds)
+ - 设置setTo("mailaddress@host,VIP<itzjm@qq.com>")，使用“,”分隔
  - 然后调用sendMessageMulit();来发送邮件
  
