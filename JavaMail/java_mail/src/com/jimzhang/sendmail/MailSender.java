@@ -1,6 +1,7 @@
 package com.jimzhang.sendmail;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
 import javax.mail.*;
@@ -29,7 +30,6 @@ public class MailSender {
 	private String subject;
 	MimeMessage msg;
 	private String to;
-	private Address[] addresses;
 
 	public String getHost() {
 		return host;
@@ -87,15 +87,6 @@ public class MailSender {
 		this.to = to;
 	}
 
-
-	public Address[] getAddresses() {
-		return addresses;
-	}
-
-	public void setAddresses(Address[] addresses) {
-		this.addresses = addresses;
-	}
-
 	/**
 	 * 创建session
 	 * @return
@@ -141,16 +132,37 @@ public class MailSender {
     }
 
 
-    protected void mailPropSetMulit() throws MessagingException {
+    protected void mailPropSetMulit() throws MessagingException, UnsupportedEncodingException {
         Session session = createSession();
 		// 创建邮件信息的对像
         msg = new MimeMessage(session);
         msg.setFrom(new InternetAddress(from));
-        msg.setRecipients(RecipientType.TO, addresses); // RecipientType.TO//收信人 RecipientType.CC//抄送人 RecipientType.BCC//暗送人
+
+		String[] mailToArrays = to.split(",");
+		InternetAddress[] toAddress = new InternetAddress[mailToArrays.length];
+		for (int i = 0; i < mailToArrays.length; i++) {
+			toAddress[i] = parseInternetAddress(mailToArrays[i]);
+		}
+        msg.setRecipients(RecipientType.TO, toAddress); // RecipientType.TO//收信人 RecipientType.CC//抄送人 RecipientType.BCC//暗送人
         msg.setSubject(subject);
         msg.setContent(content, "text/html;charset=utf-8");
-
 	}
+
+
+	private InternetAddress parseInternetAddress(String address) throws AddressException, UnsupportedEncodingException {
+    	InternetAddress actual = null;
+		if ((address.contains("<")) && (address.contains(">"))) {
+			String email = address.substring(address.indexOf("<") + 1, address.indexOf(">"));
+			String personal = address.substring(0, address.indexOf("<"));
+			actual = new InternetAddress(email, personal, "UTF-8");
+		} else {
+			actual = new InternetAddress(address);
+		}
+    	return actual;
+	}
+
+
+
      // 收件人为一人
     public void sendMessage() throws MessagingException {
         mailPropSet();
@@ -158,7 +170,7 @@ public class MailSender {
     }
 
     // 收件人为多人
-    public void sendMessageMulit() throws MessagingException {
+    public void sendMessageMulit() throws MessagingException, UnsupportedEncodingException {
 		mailPropSetMulit();
 		Transport.send(msg);
 

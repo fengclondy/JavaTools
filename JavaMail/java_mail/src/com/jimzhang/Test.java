@@ -20,15 +20,11 @@ public class Test {
         MailSender ms;
         try {
             ms = new MailSender();
-            // 发送一人
 //            ms.setTo("zhangjinmiao@zihexin.com");
+            // 发送一人
 //            ms.sendMessage();
-
             // 发送多人
-            Address address1 = new InternetAddress("zhangjinmiao@zihexin.com");
-            Address address2 = new InternetAddress("itzjm@qq.com", "张晋苗");
-            Address[] adds = {address1, address2};
-            ms.setAddresses(adds); // 发送多人
+            ms.setTo("zhangjinmiao@zihexin.com,VIP<itzjm@qq.com>");
             ms.sendMessageMulit();
 
         } catch (AddressException e) {
