@@ -1,0 +1,47 @@
+package com.jimzhang;
+
+import com.jimzhang.sendmail.MailSender;
+
+import javax.mail.Address;
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import java.io.IOException;
+
+/**
+ * 测试
+ *
+ * @author zhangjm
+ * @create 2017-09-22 14:24
+ **/
+public class Test {
+
+    public static void main(String[] args) {
+        MailSender ms;
+        try {
+            ms = new MailSender();
+            // 发送一人
+//            ms.setTo("zhangjinmiao@zihexin.com");
+//            ms.sendMessage();
+
+            // 发送多人
+            Address address1 = new InternetAddress("zhangjinmiao@zihexin.com");
+            Address address2 = new InternetAddress("itzjm@qq.com", "张晋苗");
+            Address[] adds = {address1, address2};
+            ms.setAddresses(adds); // 发送多人
+            ms.sendMessageMulit();
+
+        } catch (AddressException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (MessagingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+}
+
+
