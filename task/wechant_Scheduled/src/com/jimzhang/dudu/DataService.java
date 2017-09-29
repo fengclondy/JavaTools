@@ -1,4 +1,4 @@
-package com.zihexin.didi;//package com.zihexin;
+package com.jimzhang.dudu;//package com.zihexin;
 //
 //import java.sql.Connection;
 //import java.sql.PreparedStatement;

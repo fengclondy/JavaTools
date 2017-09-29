@@ -1,4 +1,4 @@
-package com.zihexin.utils.mail;
+package com.jimzhang.utils.mail;
 
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.HtmlEmail;

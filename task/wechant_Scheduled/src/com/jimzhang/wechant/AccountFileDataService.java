@@ -1,8 +1,8 @@
-package com.zihexin.wechant;
+package com.jimzhang.wechant;
 
 
 
-import com.zihexin.utils.JdbcUtil;
+import com.jimzhang.utils.JdbcUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

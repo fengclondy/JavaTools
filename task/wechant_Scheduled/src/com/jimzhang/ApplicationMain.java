@@ -1,13 +1,13 @@
-package com.zihexin;
+package com.jimzhang;
 
 
 
-import com.zihexin.mailServer.MailSend;
-import com.zihexin.utils.Constants;
-import com.zihexin.utils.DateUtil;
-import com.zihexin.utils.FileUtil;
-import com.zihexin.wechant.AccountFileDataService;
-import com.zihexin.utils.SFTPClientUtil;
+import com.jimzhang.mailServer.MailSend;
+import com.jimzhang.utils.Constants;
+import com.jimzhang.utils.DateUtil;
+import com.jimzhang.utils.FileUtil;
+import com.jimzhang.wechant.AccountFileDataService;
+import com.jimzhang.utils.SFTPClientUtil;
 
 import java.io.File;
 import java.util.ArrayList;

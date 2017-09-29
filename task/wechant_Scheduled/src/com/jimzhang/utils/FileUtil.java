@@ -1,4 +1,4 @@
-package com.zihexin.utils;
+package com.jimzhang.utils;
 
 import com.csvreader.CsvWriter;
 import org.apache.commons.codec.digest.DigestUtils;

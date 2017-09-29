@@ -1,8 +1,8 @@
-package com.zihexin.mailServer;
+package com.jimzhang.mailServer;
 
 
-import com.zihexin.utils.mail.Mail;
-import com.zihexin.utils.mail.MailUtil;
+import com.jimzhang.utils.mail.Mail;
+import com.jimzhang.utils.mail.MailUtil;
 
 /**
  *
@@ -10,12 +10,11 @@ import com.zihexin.utils.mail.MailUtil;
  */
 public class MailSend {
 
-    private static final String MAIL_HOST = "mail.zihexin.com"; // 内网IP :10.6.4.78
-    private static final String MAIL_SENDER = "zhangjinmiao@zihexin.com";
-//    private static final String[] MAIL_RECEIVE = {"tianhuipeng@zihexin.com", "zhangjinmiao@zihexin.com", "linyong@zihexin.com"};
-    private static final String[] MAIL_RECEIVE = { "zhangjinmiao@zihexin.com", "itzjm@qq.com"};
-    private static final String MAIL_USERNAME = "zhangjinmiao@zihexin.com";
-    private static final String MAIL_PASSWORD = "ZHXabc123";
+    private static final String MAIL_HOST = "smtp.163.com"; // 内网IP
+    private static final String MAIL_SENDER = "xxx@163.com";
+    private static final String[] MAIL_RECEIVE = { "lisi@qq.com", "itzjm@qq.com"};
+    private static final String MAIL_USERNAME = "xxx@163.com";
+    private static final String MAIL_PASSWORD = "XXXX";
     private static final String MAIL_SUBJECT = "APP Store公众号对账单";
     private static final String MAIL_MESSAGE = "对账日期：%s，支付笔数：%d笔，退款笔数：%d笔";
 

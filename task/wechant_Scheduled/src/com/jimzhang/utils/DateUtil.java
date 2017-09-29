@@ -1,4 +1,4 @@
-package com.zihexin.utils;
+package com.jimzhang.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

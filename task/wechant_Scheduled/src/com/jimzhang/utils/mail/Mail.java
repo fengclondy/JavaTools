@@ -1,4 +1,4 @@
-package com.zihexin.utils.mail;
+package com.jimzhang.utils.mail;
 
 public class Mail {
 
