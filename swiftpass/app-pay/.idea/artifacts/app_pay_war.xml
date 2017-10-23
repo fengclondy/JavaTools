@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="app-pay:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/app_pay_war</output-path>
+    <root id="archive" name="app-pay_war.war">
+      <element id="javaee-facet-resources" facet="app-pay/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="app-pay" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
