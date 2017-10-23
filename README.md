@@ -24,7 +24,9 @@ java 发送邮件项目
 
 ## swiftpass
 
-威富通支付接口项目，接口文档：https://open.swiftpass.cn，
+> 接口文档：https://open.swiftpass.cn
 
-项目可运行。
+威富通支付接口项目，项目可运行。
+
+
 
