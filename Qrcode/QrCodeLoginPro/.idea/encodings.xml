@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/kuwo/GetQrCodeServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/kuwo/LongConnectionCheckServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/kuwo/PhoneLoginServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/kuwo/util/TwoDimensionCode.java" charset="UTF-8" />
+  </component>
+</project>
